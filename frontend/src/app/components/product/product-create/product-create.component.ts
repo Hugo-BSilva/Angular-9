@@ -2,6 +2,7 @@ import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
+import { isNull } from '@angular/compiler/src/output/output_ast';
 
 
 @Component({
@@ -12,8 +13,8 @@ import { ProductService } from '../product.service';
 export class ProductCreateComponent implements OnInit {
 
   product: Product={
-    name: ' ',
-    price: 0
+    name: '',
+    price: null
   }
 
   constructor(
