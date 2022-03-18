@@ -21,6 +21,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ForDirective } from './directives/for.directive';
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
