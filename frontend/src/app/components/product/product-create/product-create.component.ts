@@ -2,7 +2,6 @@ import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
-import { isNull } from '@angular/compiler/src/output/output_ast';
 
 
 @Component({

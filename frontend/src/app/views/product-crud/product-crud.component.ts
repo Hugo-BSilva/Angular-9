@@ -16,4 +16,5 @@ export class ProductCrudComponent implements OnInit {
   navigateToProductCreate(){
     this.router.navigate(['/products/create'])
   }
+
 }
