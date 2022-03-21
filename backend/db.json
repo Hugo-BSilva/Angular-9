@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Caneta BIC Vermelha",
-      "price": 5.99
+      "price": "0"
     },
     {
       "id": 2,
@@ -49,6 +49,31 @@
       "name": "cavalo",
       "price": "5000",
       "id": 11
+    },
+    {
+      "name": "ola",
+      "price": "1000000000000",
+      "id": 12
+    },
+    {
+      "name": "req",
+      "price": "234",
+      "id": 13
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 14
+    },
+    {
+      "name": "a",
+      "price": null,
+      "id": 15
+    },
+    {
+      "name": "teste",
+      "price": "23",
+      "id": 16
     }
   ]
 }
