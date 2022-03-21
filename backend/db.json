@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC Preta",
+      "name": "Caneta BIC Vermelha",
       "price": 5.99
     },
     {
@@ -34,6 +34,21 @@
       "name": "formulário",
       "price": "98",
       "id": 7
+    },
+    {
+      "name": "testando",
+      "price": "345",
+      "id": 9
+    },
+    {
+      "name": "Alexa",
+      "price": "300",
+      "id": 10
+    },
+    {
+      "name": "cavalo",
+      "price": "5000",
+      "id": 11
     }
   ]
 }
