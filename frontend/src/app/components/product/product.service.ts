@@ -23,12 +23,13 @@ export class ProductService {
       duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
-      panelClass: isError ? ['msg-error'] : ['msg-sucess']
+      panelClass: isError ? ['msg-sucess'] : ['msg-error']
     })
   }
 
   create(product: Product): Observable<Product>{
-    return this.http.post<Product>(this.baseUrl, product).pipe(
+    return this.http.post<Product>(this.baseUrl, product)
+    .pipe(
       map((obj) => obj),
       catchError(e => this.errorHandler(e))
     );
@@ -38,7 +39,7 @@ export class ProductService {
     return this.http.get<Product[]>(this.baseUrl).pipe(
       map((obj) => obj),
       catchError(e => this.errorHandler(e))
-    );;
+    )
   }
 
   readById(id: string): Observable<Product>{
@@ -46,7 +47,7 @@ export class ProductService {
     return this.http.get<Product>(url).pipe(
       map((obj) => obj),
       catchError(e => this.errorHandler(e))
-    );;
+    )
   }
 
   update(product: Product): Observable<Product>{
@@ -54,7 +55,7 @@ export class ProductService {
     return this.http.put<Product>(url, product).pipe(
       map((obj) => obj),
       catchError(e => this.errorHandler(e))
-    );;
+    );
   }
 
   delete(id: number): Observable<Product>{
@@ -62,7 +63,7 @@ export class ProductService {
     return this.http.delete<Product>(url).pipe(
       map((obj) => obj),
       catchError(e => this.errorHandler(e))
-    );;
+    );
   }
 
   errorHandler(e: any): Observable<any>{
